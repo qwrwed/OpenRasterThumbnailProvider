@@ -1,5 +1,7 @@
 # .ora (*OpenRaster*) Windows Thumbnail Provider
 
+A Windows shell extension that generates thumbnail previews for [OpenRaster](https://www.openraster.org/) (`.ora`) files in Explorer.
+
 ## Contents
 - [.ora (*OpenRaster*) Windows Thumbnail Provider](#ora-openraster-windows-thumbnail-provider)
   - [Contents](#contents)
@@ -7,7 +9,6 @@
   - [Build](#build)
   - [Install](#install)
   - [Uninstall](#uninstall)
-  - [Notes](#notes)
 
 
 ## Requirements
@@ -59,6 +60,3 @@ regsvr32 /u OraThumbnailProvider.dll
 reg delete "HKCR\ora_auto_file\shellex\{e357fccd-a995-4576-b01f-234630154e96}" /f
 ```
 
-## Notes
-
-- Must be built as x64 - 64-bit Explorer will not load a 32-bit shell extension.
